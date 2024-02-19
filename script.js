@@ -25,13 +25,15 @@ for (const btn of btns) {
 }
 
 function colorBtn(btn) {
-  document.getElementById(btn).style.background = 'green';
+  document.getElementById(btn).style.background = '#1DD100';
   const p = document.createElement('p');
   p.textContent = btn;
   const p2 = document.createElement('p');
   p2.textContent = 'Economoy';
+  p2.classList.add('text-center');
   const p3 = document.createElement('p');
   p3.textContent = 550;
+  p3.classList.add('text-end');
   let displayElement = document.getElementById('displayElement');
   displayElement.appendChild(p);
   displayElement.appendChild(p2);
@@ -82,3 +84,13 @@ function discount(grandTotal, amount) {
   }
   count++;
 }
+
+
+
+const buySection = document.getElementById('buySection');
+buySection.addEventListener('click', function () {
+  const destination = document.getElementById('destination');
+  if (destination) {
+    destination.scrollIntoView({ behavior: 'smooth' });
+  }
+});
