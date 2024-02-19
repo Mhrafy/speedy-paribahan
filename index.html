@@ -56,7 +56,12 @@
           <h1 class="text-6xl  text-center font-extrabold "><span class="text-[#1DD100] ">Speedy Paribahan</span></h1>
           <p class="text-2xl text-white text-center pt-4">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
           
-            <a id="buySection" class=" btn ml-[47%] text-black bg-[#1DD100] border-none" href="#destination">Buy Tickets</a>
+          <a href="#destination" class="custom-button relative left-[43%] font-extrabold">
+            Buy Tickets
+          </a>
+             
+            
+            
           
          </div>
         </div>
@@ -113,38 +118,38 @@
 
       <section class="w-10/12 m-auto flex justify-between mb-8">
         <!-- coupon one -->
-        <div class=" flex flex-row mt-10">
+        <div class=" flex flex-row mt-10 font-['Inter']">
           <div class="w-72 h-44 flex flex-col items-center justify-center bg-[#FFBF0F] rounded-l-md">
-            <h1 class="text-2xl">15% OFF</h1>
-            <p>on your next purchase</p>
-            <p class="text-base">use by January 2024</p>
+            <h1 class="text-[#030712CC] text-4xl font-extrabold">15% OFF</h1>
+            <p class="text-[#030712CC] text-sm font-medium">on your next purchase</p>
+            <p class="text-[#03071280] text-sm font-medium">use by January 2024</p>
           </div>
           <div style="background-image: url('images/cupon-devider.png')"  class="h-44 bg-[#FFBF0F] border-none">
             <img class="h-44 bg-[#FFBF0F]" src="images/info-devider.png" alt="">
 
           </div> 
           <div class="w-48 h-44 flex flex-col items-center justify-center bg-[#FFBF0F] border-none rounded-r-md">
-            <h1 class="text-2xl">NEW15</h1>
-            <p>Coupon Code</p>
+            <h1 class="font-['Raleway'] text-2xl font-bold">NEW15</h1>
+            <p class="text-sm font-medium text-[#03071266]">Coupon Code</p>
           </div>
 
 
         </div>
         <!-- coupon two -->
         <div>
-          <div class="flex flex-row mt-10">
+          <div class="flex flex-row mt-10 font-['Inter']">
             <div class="w-72 h-44 flex flex-col items-center justify-center bg-[#F78C9C] rounded-l-md">
-              <h1 class="text-2xl">15% OFF</h1>
-              <p>on your next purchase</p>
-              <p class="text-base">use by January 2024</p>
+              <h1 class="text-[#030712CC] text-4xl font-extrabold">20% OFF</h1>
+              <p class="text-[#030712CC] text-sm font-medium">on your next purchase</p>
+              <p class="text-[#03071280] text-sm font-medium">use by January 2024</p>
             </div>
             <div style="background-image: url('images/cupon-devider.png')"  class="h-44 bg-[#F78C9C] border-none">
               <img class="h-44 bg-[#F78C9C]" src="images/info-devider.png" alt="">
   
             </div> 
             <div class="w-48 h-44 flex flex-col items-center justify-center bg-[#F78C9C] border-none rounded-r-md">
-              <h1 class="text-2xl">NEW15</h1>
-              <p>Coupon Code</p>
+              <h1 class="font-['Raleway'] text-2xl font-bold">Couple 20</h1>
+              <p class="text-sm font-medium text-[#03071266]">Coupon Code</p>
             </div>
            </div>
         </div>
@@ -157,11 +162,14 @@
           See All Offers
         </button>
       </div>
- 
+      
+      <!-- ticketing section -->
       <section class="bg-[#F7F8F8] border border-t-[#1DD100] rounded-t-[70px] border-t-4">
         <div
           class="font-['Inter'] flex flex-col gap-3 justify-between px-10 lg:px-32 py-5 lg:py-12"
         >
+
+
           <div>
             <div class="pt-32 mb-12 text-center">
               <h3 class=" text-[#030712] font-bold text-4xl mb-6">
@@ -778,8 +786,9 @@
           </div>
         </div>
       </section>
+      <!-- ticketing section -->
      
-
+      <!-- modal start -->
       <dialog id="myModal" class="modal">
         <div class="modal-box space-y-3">
           <div class="flex justify-center">
@@ -795,7 +804,7 @@
               Thank you for Booking Our Bus Seats. We are working hard to find the
               best service and deals for you.
             </p>
-            <p class="font-light">
+            <p class="font-light pt-4">
               Shortly you will find a confirmation in your email.
             </p>
           </div>
@@ -808,9 +817,12 @@
           </div>
         </div>
       </dialog>
+      <!-- modal -->
 
     </main>
-    
+
+
+    <!-- footer start -->
     <footer class="bg-[#030712] text-white font-['Inter']">
       <div class="flex justify-between py-24 px-32">
         <div>
@@ -840,6 +852,9 @@
         </div>
       </div>
     </footer>
+    <!-- footer end -->
+
+    <!-- js link -->
     <script src="script.js"></script>
 </body>
 </html>

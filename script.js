@@ -66,9 +66,7 @@ function costDisplay() {
       const inputBox = document.getElementById('inputBox');
       inputBox.style.display = 'none';
     }
-    // else {
-    //   alert('Please add more items');
-    // }
+    
   });
 }
 
@@ -87,10 +85,3 @@ function discount(grandTotal, amount) {
 
 
 
-const buySection = document.getElementById('buySection');
-buySection.addEventListener('click', function () {
-  const destination = document.getElementById('destination');
-  if (destination) {
-    destination.scrollIntoView({ behavior: 'smooth' });
-  }
-});
