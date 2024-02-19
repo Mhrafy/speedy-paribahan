@@ -18,7 +18,7 @@ for (const btn of btns) {
       const name = document.getElementById('name').value;
       const mobile = document.getElementById('mobile').value;
       if (btnClick > 0 && name !== '' && mobile !== '') {
-        window.location.href = 'modal.html';
+        myModal.showModal();
       }
     });
   });
