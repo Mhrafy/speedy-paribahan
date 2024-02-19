@@ -3,6 +3,8 @@ let btnClick = 0;
 let totalCost = 0;
 let grandTotal = 0;
 let count = 0;
+
+// button limitation and modal
 for (const btn of btns) {
   btn.addEventListener('click', e => {
     btnClick += 1;
@@ -24,6 +26,7 @@ for (const btn of btns) {
   });
 }
 
+// button color function
 function colorBtn(btn) {
   document.getElementById(btn).style.background = '#1DD100';
   const p = document.createElement('p');
@@ -43,6 +46,7 @@ function colorBtn(btn) {
   totalSeat.innerText = parseInt(totalSeat.innerText) - 1;
 }
 
+// cost display function
 function costDisplay() {
   const cost = document.getElementById('totalPrice');
   totalCost += 550;
@@ -70,6 +74,8 @@ function costDisplay() {
   });
 }
 
+
+// discount function
 function discount(grandTotal, amount) {
   if (count === 0) {
     const discountAmount = document.getElementById('discountAmount');
